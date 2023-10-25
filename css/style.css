@@ -7,6 +7,7 @@ VARIABLES
 :root {
   --my-bg-header: #f8f9fa;
   --my-bg-searchbar: #e5e5e5;
+  --icon-bell-color: #ff8f00;
 }
 
 /*
@@ -29,13 +30,18 @@ header .my-navbar {
   background-color: white;
 }
 
-.fa-bell {
-  color: orange;
+header .fa-bell {
+  color: var(--icon-bell-color);
 }
 
-.my-bg-seachbar {
+header .my-bg-searchbar {
   background-color: var(--my-bg-searchbar);
 }
+
+header .logo-dimension {
+  max-height: 54px;
+}
+
 /*
 -----------
 MAIN

@@ -31,19 +31,27 @@
     <!-- header -->
     <header class="py-2 align-items-center">
       <div class="my-navbar row h-100 align-items-center px-2">
-        <div class="col col-2">
-          <img src="img/mobile-logo.png" alt="mobile-logo" class="img-fluid" />
-          <img src="img/logo.svg" alt="logo" class="img-fluid d-none" />
+        <div class="col-auto">
+          <img
+            src="img/mobile-logo.png"
+            alt="mobile-logo"
+            class="logo-dimension d-xl-none"
+          />
+          <img
+            src="img/logo.svg"
+            alt="logo"
+            class="logo-dimension d-none d-xl-block"
+          />
         </div>
         <div class="col">
           <form class="container-fluid">
             <div class="input-group">
-              <span class="input-group-text my-bg-seachbar" id="basic-addon1"
+              <span class="input-group-text my-bg-searchbar" id="basic-addon1"
                 ><i class="fa-solid fa-magnifying-glass"></i
               ></span>
               <input
                 type="text"
-                class="form-control border-start-0 my-bg-seachbar ps-0"
+                class="form-control border-start-0 my-bg-searchbar ps-0"
                 placeholder="Prova a cercare: Lezioni di Laravel"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
@@ -51,10 +59,10 @@
             </div>
           </form>
         </div>
-        <div class="col col-1 d-flex">
-          <i class="fa-solid fa-bars d-none"></i>
-          <i class="fa-solid fa-circle-question d-none"></i>
-          <i class="fa-solid fa-ellipsis-vertical d-none"></i>
+        <div class="col-auto d-flex gap-3">
+          <i class="fa-solid fa-bars d-none d-xl-block"></i>
+          <i class="fa-solid fa-circle-question d-none d-xl-block"></i>
+          <i class="fa-solid fa-ellipsis-vertical d-none d-xl-block"></i>
           <i class="fa-solid fa-bell"></i>
         </div>
       </div>

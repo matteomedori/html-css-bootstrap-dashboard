@@ -1,0 +1,52 @@
+/*
+-----------
+HEADER
+-----------
+*/
+
+header {
+  background-color: red;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/*
+-----------
+MAIN
+-----------
+*/
+
+main {
+  margin-top: 70px;
+  height: calc(100vh - 70px);
+}
+
+.side-bar {
+  width: 70px;
+  background-color: green;
+}
+
+.content-main {
+  width: calc(100vw - 70px);
+  background-color: yellow;
+}
+
+/*
+-----------
+RESPONSIVE
+-----------
+*/
+
+@media screen and (min-width: 1200px) {
+  .side-bar {
+    width: 150px;
+  }
+
+  .content-main {
+    width: calc(100vw - 150px);
+  }
+}

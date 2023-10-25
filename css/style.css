@@ -8,6 +8,7 @@ VARIABLES
   --my-bg-header: #f8f9fa;
   --my-bg-searchbar: #e5e5e5;
   --icon-bell-color: #ff8f00;
+  --my-bg-sidebar: #142a40;
 }
 
 /*
@@ -55,7 +56,8 @@ main {
 
 .side-bar {
   width: 70px;
-  background-color: green;
+  background-color: var(--my-bg-sidebar);
+  background-image: url(../img/sidebar-bg.png);
 }
 
 .content-main {
@@ -70,10 +72,16 @@ RESPONSIVE
 */
 
 @media screen and (min-width: 1200px) {
+  /*side-bar*/
   .side-bar {
     width: 150px;
   }
 
+  .side-bar span:nth-of-type(2) {
+    width: 40px;
+  }
+
+  /*main content*/
   .content-main {
     width: calc(100vw - 150px);
   }

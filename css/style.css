@@ -1,11 +1,22 @@
 /*
 -----------
+VARIABLES
+-----------
+*/
+
+:root {
+  --my-bg-header: #f8f9fa;
+  --my-bg-searchbar: #e5e5e5;
+}
+
+/*
+-----------
 HEADER
 -----------
 */
 
 header {
-  background-color: red;
+  background-color: var(--my-bg-header);
   height: 70px;
   position: fixed;
   top: 0;
@@ -14,6 +25,17 @@ header {
   z-index: 10;
 }
 
+header .my-navbar {
+  background-color: white;
+}
+
+.fa-bell {
+  color: orange;
+}
+
+.my-bg-seachbar {
+  background-color: var(--my-bg-searchbar);
+}
 /*
 -----------
 MAIN

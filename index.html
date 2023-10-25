@@ -13,13 +13,52 @@
     />
     <!-- /Bootstrap -->
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- /Font Awesome -->
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- /CSS -->
   </head>
   <body>
     <!-- header -->
-    <header>header</header>
+    <header class="py-2 align-items-center">
+      <div class="my-navbar row h-100 align-items-center px-2">
+        <div class="col col-2">
+          <img src="img/mobile-logo.png" alt="mobile-logo" class="img-fluid" />
+          <img src="img/logo.svg" alt="logo" class="img-fluid d-none" />
+        </div>
+        <div class="col">
+          <form class="container-fluid">
+            <div class="input-group">
+              <span class="input-group-text my-bg-seachbar" id="basic-addon1"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control border-start-0 my-bg-seachbar ps-0"
+                placeholder="Prova a cercare: Lezioni di Laravel"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col col-1 d-flex">
+          <i class="fa-solid fa-bars d-none"></i>
+          <i class="fa-solid fa-circle-question d-none"></i>
+          <i class="fa-solid fa-ellipsis-vertical d-none"></i>
+          <i class="fa-solid fa-bell"></i>
+        </div>
+      </div>
+    </header>
     <!-- /header -->
 
     <!-- main -->

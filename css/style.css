@@ -78,12 +78,12 @@ main {
   border-color: gray;
 }
 
-.img-table {
-  width: 30px;
-}
-
 table {
   border-collapse: unset;
+}
+
+table .img-table {
+  width: 30px;
 }
 
 /*
@@ -92,6 +92,7 @@ RESPONSIVE
 -----------
 */
 
+/*da 1200px in poi (xl)*/
 @media screen and (min-width: 1200px) {
   /*side-bar*/
   .side-bar {

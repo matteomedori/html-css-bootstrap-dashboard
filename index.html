@@ -29,7 +29,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="py-2 align-items-center">
+    <header class="p-2">
       <div class="my-navbar row h-100 align-items-center px-2">
         <div class="col-auto">
           <img
@@ -59,11 +59,19 @@
             </div>
           </form>
         </div>
-        <div class="col-auto d-flex gap-3">
-          <i class="fa-solid fa-bars d-none d-xl-block"></i>
-          <i class="fa-solid fa-circle-question d-none d-xl-block"></i>
-          <i class="fa-solid fa-ellipsis-vertical d-none d-xl-block"></i>
-          <i class="fa-solid fa-bell"></i>
+        <div class="col-auto">
+          <ul class="list-unstyled d-flex align-items-center m-0 gap-3">
+            <li class="d-none d-xl-block">
+              <i class="fa-solid fa-bars"></i>
+            </li>
+            <li class="d-none d-xl-block">
+              <i class="fa-solid fa-circle-question"></i>
+            </li>
+            <li class="d-none d-xl-block">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </li>
+            <li><i class="fa-solid fa-bell"></i></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -72,27 +80,29 @@
     <!-- main -->
     <main class="d-flex">
       <!-- sidebar -->
-      <div
-        class="side-bar d-flex flex-column align-items-center pt-5 pb-4 text-white"
-      >
-        <div class="mb-2 d-xl-flex gap-3 align-items-center">
-          <i class="fa-solid fa-house fs-6"></i>
-          <span class="d-none d-xl-block">Home</span>
-        </div>
-        <div class="mb-2 d-xl-flex gap-3 align-items-center">
-          <i class="fa-solid fa-chart-simple fs-6"></i>
-          <span class="d-none d-xl-block">Stats</span>
-        </div>
-        <div class="d-xl-flex gap-3 align-items-center">
-          <i class="fa-solid fa-signal fs-6"></i>
-          <span class="d-none d-xl-block">Signals</span>
-        </div>
-        <div class="col w-100"></div>
-        <div class="d-xl-flex gap-3 align-items-center">
-          <i class="fa-solid fa-gear fs-6"></i>
-          <span class="d-none d-xl-block">Admin</span>
-        </div>
+      <div class="side-bar">
+        <ul
+          class="d-flex flex-column align-items-center pt-5 pb-4 text-white list-unstyled h-100"
+        >
+          <li class="mb-2 d-xl-flex gap-3 align-items-center">
+            <i class="fa-solid fa-house fs-6"></i>
+            <span class="d-none d-xl-block">Home</span>
+          </li>
+          <li class="mb-2 d-xl-flex gap-3 align-items-center">
+            <i class="fa-solid fa-chart-simple fs-6"></i>
+            <span class="d-none d-xl-block">Stats</span>
+          </li>
+          <li class="d-xl-flex gap-3 align-items-center">
+            <i class="fa-solid fa-signal fs-6"></i>
+            <span class="d-none d-xl-block">Signals</span>
+          </li>
+          <li class="d-xl-flex gap-3 align-items-center mt-auto">
+            <i class="fa-solid fa-gear fs-6"></i>
+            <span class="d-none d-xl-block">Admin</span>
+          </li>
+        </ul>
       </div>
+
       <!-- /sidebar -->
 
       <!-- main content -->
@@ -133,6 +143,374 @@
           </div>
         </div>
         <!-- /first section -->
+
+        <!-- second section -->
+        <div
+          class="my-main-bg py-4 px-3 d-flex flex-wrap flex-xl-nowrap gap-3 h-100"
+        >
+          <div class="col-12 col-xl-8">
+            <div class="card w-100 mb-4" style="width: 18rem">
+              <div class="card-header fw-semibold fs-3">Prossime Classi</div>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <td scope="col" class="fw-semibold w-50">Nome</td>
+                    <td scope="col" class="fw-semibold d-none d-md-table-cell">
+                      Data Inizio
+                    </td>
+                    <td scope="col" class="fw-semibold d-none d-md-table-cell">
+                      ROI
+                    </td>
+                    <td scope="col" class="fw-semibold">Stato</td>
+                    <td scope="col" class="fw-semibold">Azioni</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        src="img/class-avatar.png"
+                        alt="class-avatar"
+                        class="img-table me-2"
+                      />
+                      <span class="fw-semibold"> Classe 75</span>
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">20%</td>
+                    <td><span class="badge text-bg-success">Done</span></td>
+                    <td>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="img/class-avatar.png"
+                        alt="class-avatar"
+                        class="img-table me-2"
+                      />
+                      <span class="fw-semibold"> Classe 75</span>
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">20%</td>
+                    <td>
+                      <span class="badge text-bg-success">Done</span>
+                    </td>
+                    <td>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="img/class-avatar.png"
+                        alt="class-avatar"
+                        class="img-table me-2"
+                      />
+                      <span class="fw-semibold"> Classe 75</span>
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">20%</td>
+                    <td>
+                      <span class="badge text-bg-warning text-white"
+                        >process</span
+                      >
+                    </td>
+                    <td>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="img/class-avatar.png"
+                        alt="class-avatar"
+                        class="img-table me-2"
+                      />
+                      <span class="fw-semibold"> Classe 75</span>
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">20%</td>
+                    <td><span class="badge text-bg-success">Done</span></td>
+                    <td>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="img/class-avatar.png"
+                        alt="class-avatar"
+                        class="img-table me-2"
+                      />
+                      <span class="fw-semibold"> Classe 75</span>
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">20%</td>
+                    <td><span class="badge text-bg-danger">failed</span></td>
+                    <td>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="img/class-avatar.png"
+                        alt="class-avatar"
+                        class="img-table me-2"
+                      />
+                      <span class="fw-semibold"> Classe 75</span>
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">20%</td>
+                    <td><span class="badge text-bg-success">Done</span></td>
+                    <td>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="img/class-avatar.png"
+                        alt="class-avatar"
+                        class="img-table me-2"
+                      />
+                      <span class="fw-semibold"> Classe 75</span>
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">20%</td>
+                    <td><span class="badge text-bg-danger">failed</span></td>
+                    <td>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="img/class-avatar.png"
+                        alt="class-avatar"
+                        class="img-table me-2"
+                      />
+                      <span class="fw-semibold"> Classe 75</span>
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="fw-semibold d-none d-md-table-cell">20%</td>
+                    <td><span class="badge text-bg-success">Done</span></td>
+                    <td>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button type="button" class="btn my-btn-color py-1 px-2">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card w-100" style="width: 18rem">
+              <div class="card-header fw-semibold fs-3">F.A.Q</div>
+              <div class="accordion p-2" id="accordionExample">
+                <div
+                  class="accordion-item border-start-0 border-top-0 border-end-0"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button fw-semibold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Come aggiungere un nuovo studente?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Labore exercitationem sed hic asperiores, perferendis
+                      magni ex quam velit qui unde similique eius! Minima, nemo
+                      molestiae? Odio corporis praesentium corrupti assumenda?
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item border-start-0 border-top-0 border-end-0"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fw-semibold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Come posso accedere alle informazioni del mio account?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cumque nemo modi esse veritatis sed sit qui unde
+                      recusandae. Voluptates blanditiis architecto itaque atque
+                      perferendis dolor delectus at dignissimos fuga numquam.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fw-semibold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Posso usare questa dashboard da mobile?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quam ipsum voluptates numquam ipsa quae perspiciatis
+                      maxime cum dolores facilis. Amet perspiciatis et ab maxime
+                      vero, aliquam sint! Nam, excepturi animi.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-4">
+            <div class="card w-100 mb-4" style="width: 18rem">
+              <div class="card-header fw-semibold fs-3">Todo</div>
+              <ul class="list-group p-3">
+                <li class="list-group-item">
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="firstCheckbox"
+                  />
+                  <label
+                    class="form-check-label fw-semibold"
+                    for="firstCheckbox"
+                    >Kickoff nuove classi</label
+                  >
+                </li>
+                <li class="list-group-item">
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="secondCheckbox"
+                  />
+                  <label
+                    class="form-check-label fw-semibold"
+                    for="secondCheckbox"
+                    >Lezioni su Bootstrap 5 in classe #75</label
+                  >
+                </li>
+                <li class="list-group-item">
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="thirdCheckbox"
+                  />
+                  <label
+                    class="form-check-label fw-semibold"
+                    for="thirdCheckbox"
+                    >Controllare usarname github studenti</label
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="card w-100" style="width: 18rem">
+              <ul class="list-group p-3 fw-semibold">
+                <li class="list-group-item border-bottom-0">
+                  <img src="img/stats.jpeg" alt="stats" class="img-fluid" />
+                </li>
+                <li class="list-group-item">
+                  <div class="fs-4 mb-1">Utenti attivi</div>
+                  Lista degli utenti attivi in piattaforma nell'ultimo mese
+                </li>
+                <li class="list-group-item">Gennaio: 1200</li>
+                <li class="list-group-item">Febbraio: 800</li>
+                <li class="list-group-item">Marzo: 500</li>
+                <li class="list-group-item">Visualizza report approfondito</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /second section -->
       </div>
       <!-- /main content -->
     </main>

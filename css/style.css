@@ -1,3 +1,5 @@
+@import "./components/component-icon-inside-circle.css";
+
 /*
 -----------
 VARIABLES
@@ -5,11 +7,14 @@ VARIABLES
 */
 
 :root {
-  --my-bg-header: #f8f9fa;
+  --my-bg-grey: #f8f9fa;
   --my-bg-searchbar: #e5e5e5;
   --icon-bell-color: #ff8f00;
   --my-bg-sidebar: #142a40;
   --my-bg-main-sect: #1b72e8;
+  --header-height: 70px;
+  --logo-max-height: 54px;
+  --badge-bg: #165bba;
 }
 
 /*
@@ -19,13 +24,8 @@ HEADER
 */
 
 header {
-  background-color: var(--my-bg-header);
-  height: 70px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
+  background-color: var(--my-bg-grey);
+  height: var(--header-height);
 }
 
 header .my-navbar {
@@ -41,7 +41,7 @@ header .my-bg-searchbar {
 }
 
 header .logo-dimension {
-  max-height: 54px;
+  max-height: var(--logo-max-height);
 }
 
 /*
@@ -51,7 +51,6 @@ MAIN
 */
 
 main {
-  margin-top: 70px;
   height: calc(100vh - 70px);
 }
 
@@ -63,7 +62,6 @@ main {
 
 .content-main {
   width: calc(100vw - 70px);
-  background-color: yellow;
 }
 
 #first-sect-main {
@@ -71,7 +69,20 @@ main {
 }
 
 #first-sect-main .badge {
-  background-color: #165bba;
+  background-color: var(--badge-bg);
+}
+
+main .my-main-bg {
+  background-color: var(--my-bg-grey);
+}
+
+.my-btn-color {
+  color: grey;
+  border-color: gray;
+}
+
+.img-table {
+  width: 30px;
 }
 
 /*

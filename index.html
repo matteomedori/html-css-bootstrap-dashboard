@@ -102,21 +102,29 @@
       <!-- sidebar -->
       <div class="side-bar">
         <ul
-          class="d-flex flex-column align-items-center pt-5 pb-4 text-white list-unstyled h-100"
+          class="d-flex flex-column align-items-center pt-5 pb-4 px-3 text-white list-unstyled h-100"
         >
-          <li class="mb-2 d-xl-flex gap-3 align-items-center">
+          <li
+            class="mb-2 d-flex gap-3 align-items-center justify-content-center w-100"
+          >
             <i class="fa-solid fa-house fs-6"></i>
             <span class="d-none d-xl-block">Home</span>
           </li>
-          <li class="mb-2 d-xl-flex gap-3 align-items-center">
+          <li
+            class="mb-2 d-flex gap-3 align-items-center justify-content-center w-100"
+          >
             <i class="fa-solid fa-chart-simple fs-6"></i>
             <span class="d-none d-xl-block">Stats</span>
           </li>
-          <li class="d-xl-flex gap-3 align-items-center">
+          <li
+            class="d-flex gap-3 align-items-center justify-content-center w-100"
+          >
             <i class="fa-solid fa-signal fs-6"></i>
             <span class="d-none d-xl-block">Signals</span>
           </li>
-          <li class="d-xl-flex gap-3 align-items-center mt-auto">
+          <li
+            class="d-flex gap-3 align-items-center mt-auto justify-content-center w-100"
+          >
             <i class="fa-solid fa-gear fs-6"></i>
             <span class="d-none d-xl-block">Admin</span>
           </li>
@@ -269,25 +277,12 @@
         </div>
         <!-- /first section -->
 
-        <!-- prova -->
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1">@</span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Username"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-        </div>
-        <!-- prova -->
-
         <!-- second section -->
         <div class="py-4 px-3 d-flex flex-wrap flex-xl-nowrap gap-3">
           <div class="col-12 col-xl-8">
             <div class="card w-100 mb-4" style="width: 18rem">
               <div class="card-header fw-semibold fs-3">Prossime Classi</div>
-              <table class="table table-hover">
+              <table class="table table-hover p-3">
                 <thead>
                   <tr>
                     <td scope="col" class="fw-semibold w-50">Nome</td>
@@ -641,7 +636,9 @@
                 <li class="list-group-item">Gennaio: 1200</li>
                 <li class="list-group-item">Febbraio: 800</li>
                 <li class="list-group-item">Marzo: 500</li>
-                <li class="list-group-item">Visualizza report approfondito</li>
+                <li class="list-group-item">
+                  <a href="#">Visualizza report approfondito</a>
+                </li>
               </ul>
             </div>
           </div>

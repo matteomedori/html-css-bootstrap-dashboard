@@ -82,6 +82,10 @@ main {
   width: 30px;
 }
 
+table {
+  border-collapse: unset;
+}
+
 /*
 -----------
 RESPONSIVE
@@ -104,6 +108,23 @@ RESPONSIVE
   }
 
   .my-offcanvas {
-    width: 40% !important;
+    width: 50% !important;
   }
+}
+
+/*
+-----------
+EFFECTS
+-----------
+*/
+
+#first-sect-main button:active {
+  background-color: white;
+  color: var(--my-bg-main-sect) !important;
+  border-color: var(--my-bg-main-sect) !important;
+}
+
+.side-bar li:hover {
+  cursor: pointer;
+  background-color: grey;
 }

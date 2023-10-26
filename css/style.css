@@ -7,7 +7,7 @@ VARIABLES
 */
 
 :root {
-  --my-bg-grey: #f8f9fa;
+  --my-bg-main: #f8f9fa;
   --my-bg-searchbar: #e5e5e5;
   --icon-bell-color: #ff8f00;
   --my-bg-sidebar: #142a40;
@@ -52,6 +52,7 @@ MAIN
 
 main {
   height: calc(100vh - 70px);
+  background-color: var(--my-bg-main);
 }
 
 .side-bar {
@@ -70,10 +71,6 @@ main {
 
 #first-sect-main .badge {
   background-color: var(--badge-bg);
-}
-
-main .my-main-bg {
-  background-color: var(--my-bg-grey);
 }
 
 .my-btn-color {
@@ -104,5 +101,9 @@ RESPONSIVE
   /*main content*/
   .content-main {
     width: calc(100vw - 150px);
+  }
+
+  .my-offcanvas {
+    width: 40% !important;
   }
 }

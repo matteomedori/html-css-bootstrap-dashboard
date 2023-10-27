@@ -56,13 +56,9 @@ main {
 }
 
 .side-bar {
-  width: 70px;
+  padding-top: 35px !important;
   background-color: var(--my-bg-sidebar);
   background-image: url(../img/sidebar-bg.png);
-}
-
-.content-main {
-  width: calc(100vw - 70px);
 }
 
 #first-sect-main {
@@ -71,6 +67,10 @@ main {
 
 #first-sect-main .badge {
   background-color: var(--badge-bg);
+}
+
+#first-sect-main button {
+  padding: 5px 10px;
 }
 
 .my-btn-color {
@@ -95,18 +95,12 @@ RESPONSIVE
 /*da 1200px in poi (xl)*/
 @media screen and (min-width: 1200px) {
   /*side-bar*/
-  .side-bar {
-    width: 150px;
-  }
 
-  .side-bar span:nth-of-type(2) {
-    width: 40px;
+  .side-bar {
+    padding-top: 45px !important;
   }
 
   /*main content*/
-  .content-main {
-    width: calc(100vw - 150px);
-  }
 
   .my-offcanvas {
     width: 50% !important;
@@ -119,7 +113,7 @@ EFFECTS
 -----------
 */
 
-#first-sect-main button:active {
+#first-sect-main button:hover {
   background-color: white;
   color: var(--my-bg-main-sect) !important;
   border-color: var(--my-bg-main-sect) !important;

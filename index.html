@@ -30,7 +30,9 @@
   <body>
     <!-- header -->
     <header class="container-fluid">
+      <!-- navbar -->
       <div class="my-navbar row h-100 align-items-center px-2">
+        <!-- logo -->
         <div class="col-auto">
           <img
             src="img/mobile-logo.png"
@@ -43,10 +45,15 @@
             class="logo-dimension d-none d-xl-block"
           />
         </div>
-        <div class="col">
+        <!-- /logo -->
+
+        <!-- searchbar -->
+        <div class="col ps-0">
           <form class="container-fluid">
             <div class="input-group">
-              <span class="input-group-text my-bg-searchbar" id="basic-addon1"
+              <span
+                class="input-group-text my-bg-searchbar"
+                id="header-searchbar"
                 ><i class="fa-solid fa-magnifying-glass"></i
               ></span>
               <input
@@ -54,11 +61,14 @@
                 class="form-control border-start-0 my-bg-searchbar ps-0"
                 placeholder="Prova a cercare: Lezioni di Laravel"
                 aria-label="Username"
-                aria-describedby="basic-addon1"
+                aria-describedby="header-searchbar"
               />
             </div>
           </form>
         </div>
+        <!-- /searchbar -->
+
+        <!-- list -->
         <div class="col-auto">
           <ul class="list-unstyled d-flex align-items-center m-0 gap-3">
             <li class="d-none d-xl-block">
@@ -93,25 +103,28 @@
             </li>
           </ul>
         </div>
+        <!-- /list -->
       </div>
+      <!-- /navbar -->
     </header>
     <!-- /header -->
 
     <!-- main -->
     <main class="d-flex">
       <!-- sidebar -->
-      <div class="side-bar">
+      <div class="side-bar flex-shrink-1 pb-4 px-4">
+        <!-- sidebar list -->
         <ul
-          class="d-flex flex-column align-items-center pt-5 pb-4 px-3 text-white list-unstyled h-100"
+          class="d-flex flex-column align-items-center text-white list-unstyled h-100"
         >
           <li
-            class="mb-2 d-flex gap-3 align-items-center justify-content-center w-100"
+            class="mb-3 mb-xl-2 d-flex gap-3 align-items-center justify-content-center w-100"
           >
             <i class="fa-solid fa-house fs-6"></i>
             <span class="d-none d-xl-block">Home</span>
           </li>
           <li
-            class="mb-2 d-flex gap-3 align-items-center justify-content-center w-100"
+            class="mb-3 mb-xl-2 d-flex gap-3 align-items-center justify-content-center w-100"
           >
             <i class="fa-solid fa-chart-simple fs-6"></i>
             <span class="d-none d-xl-block">Stats</span>
@@ -129,16 +142,17 @@
             <span class="d-none d-xl-block">Admin</span>
           </li>
         </ul>
+        <!-- /sidebar list -->
       </div>
-
       <!-- /sidebar -->
 
       <!-- main content -->
-      <div class="content-main overflow-auto">
+      <div class="content-main overflow-auto flex-grow-1">
         <!-- first section blu -->
         <div class="py-4 px-2 text-white d-md-flex" id="first-sect-main">
-          <div class="order-md-3 mb-4 flex-grow-1 col-xl-1">
-            <span class="me-3">Nuono Studente</span>
+          <!-- nuovo studente -->
+          <div class="order-md-3 mb-4 col-md-3">
+            <h5 class="me-3 d-inline-block align-text-top">Nuovo Studente</h5>
 
             <button
               class="btn border-white text-white"
@@ -248,45 +262,56 @@
               </div>
             </div>
           </div>
-          <div class="mb-4 flex-grow-1 col-xl-5">
+          <!-- /nuovo studente -->
+
+          <!-- boolean + breadcrumb -->
+          <div class="mb-4 col-md-4 col-xl-5">
             <div>
-              <span class="fs-2 fw-semibold">Boolean</span>
-              <span class="badge rounded-pill">Piano Blaze</span>
+              <h1 class="fs-2 fw-semibold d-inline-block">Boolean</h1>
+              <a href="#" class="badge rounded-pill text-decoration-none"
+                >Piano Blaze</a
+              >
             </div>
             <div>
               <span class="badge rounded-pill">3 app</span>
               <i class="fa-solid fa-angles-right"></i>
-              <span class="badge rounded-pill d-xl-none"
+              <span class="badge rounded-pill d-lg-none"
                 ><i class="fa-solid fa-plus"></i
               ></span>
-              <span class="badge rounded-pill d-none d-xl-inline-block"
+              <span class="badge rounded-pill d-none d-lg-inline-block"
                 >Boolean mobile app</span
               >
-              <span class="badge rounded-pill d-none d-xl-inline-block"
+              <span class="badge rounded-pill d-none d-lg-inline-block"
                 >Boolean web app</span
               >
-              <span class="badge rounded-pill d-none d-xl-inline-block"
+              <span class="badge rounded-pill d-none d-lg-inline-block"
                 >Boolean blog app</span
               >
             </div>
           </div>
-          <div class="px-md-4 flex-grow-1 col-xl-3">
-            <div>Studenti online negli ultimi 30 minuti</div>
-            <div class="fs-2">125</div>
+          <!-- /boolean + breadcrumb -->
+
+          <!-- studenti online -->
+          <div class="px-md-4 col-md-4">
+            <h6>Studenti online negli ultimi 30 minuti</h6>
+            <strong class="fs-2 fw-semibold">125</strong>
           </div>
+          <!-- /studenti online -->
         </div>
         <!-- /first section blu -->
 
         <!-- second section -->
-        <div class="py-4 px-3 d-flex flex-wrap flex-xl-nowrap gap-3">
-          <div class="col-12 col-xl-8">
-            <div class="card w-100 mb-4" style="width: 18rem">
+        <div class="d-flex flex-wrap flex-xl-nowrap">
+          <!-- left col -->
+          <div class="col-12 col-xl-8 ps-3 pt-4 pb-0 pb-xl-4 pe-3 pe-xl-2">
+            <!-- card table -->
+            <div class="card mb-4">
               <div class="card-header fw-semibold fs-3">Prossime Classi</div>
               <table class="table table-hover p-3">
                 <thead>
                   <tr>
                     <td scope="col" class="fw-semibold w-50">Nome</td>
-                    <td scope="col" class="fw-semibold d-none d-md-table-cell">
+                    <td scope="col" class="fw-semibold d-none d-lg-table-cell">
                       Data Inizio
                     </td>
                     <td scope="col" class="fw-semibold d-none d-md-table-cell">
@@ -306,7 +331,7 @@
                       />
                       <span class="fw-semibold"> Classe 75</span>
                     </td>
-                    <td class="fw-semibold d-none d-md-table-cell">
+                    <td class="fw-semibold d-none d-lg-table-cell">
                       15 Feb 2021
                     </td>
                     <td class="fw-semibold d-none d-md-table-cell">20%</td>
@@ -329,7 +354,7 @@
                       />
                       <span class="fw-semibold"> Classe 75</span>
                     </td>
-                    <td class="fw-semibold d-none d-md-table-cell">
+                    <td class="fw-semibold d-none d-lg-table-cell">
                       15 Feb 2021
                     </td>
                     <td class="fw-semibold d-none d-md-table-cell">20%</td>
@@ -354,7 +379,7 @@
                       />
                       <span class="fw-semibold"> Classe 75</span>
                     </td>
-                    <td class="fw-semibold d-none d-md-table-cell">
+                    <td class="fw-semibold d-none d-lg-table-cell">
                       15 Feb 2021
                     </td>
                     <td class="fw-semibold d-none d-md-table-cell">20%</td>
@@ -381,7 +406,7 @@
                       />
                       <span class="fw-semibold"> Classe 75</span>
                     </td>
-                    <td class="fw-semibold d-none d-md-table-cell">
+                    <td class="fw-semibold d-none d-lg-table-cell">
                       15 Feb 2021
                     </td>
                     <td class="fw-semibold d-none d-md-table-cell">20%</td>
@@ -404,7 +429,7 @@
                       />
                       <span class="fw-semibold"> Classe 75</span>
                     </td>
-                    <td class="fw-semibold d-none d-md-table-cell">
+                    <td class="fw-semibold d-none d-lg-table-cell">
                       15 Feb 2021
                     </td>
                     <td class="fw-semibold d-none d-md-table-cell">20%</td>
@@ -427,7 +452,7 @@
                       />
                       <span class="fw-semibold"> Classe 75</span>
                     </td>
-                    <td class="fw-semibold d-none d-md-table-cell">
+                    <td class="fw-semibold d-none d-lg-table-cell">
                       15 Feb 2021
                     </td>
                     <td class="fw-semibold d-none d-md-table-cell">20%</td>
@@ -450,7 +475,7 @@
                       />
                       <span class="fw-semibold"> Classe 75</span>
                     </td>
-                    <td class="fw-semibold d-none d-md-table-cell">
+                    <td class="fw-semibold d-none d-lg-table-cell">
                       15 Feb 2021
                     </td>
                     <td class="fw-semibold d-none d-md-table-cell">20%</td>
@@ -473,7 +498,7 @@
                       />
                       <span class="fw-semibold"> Classe 75</span>
                     </td>
-                    <td class="fw-semibold d-none d-md-table-cell">
+                    <td class="fw-semibold d-none d-lg-table-cell">
                       15 Feb 2021
                     </td>
                     <td class="fw-semibold d-none d-md-table-cell">20%</td>
@@ -490,7 +515,10 @@
                 </tbody>
               </table>
             </div>
-            <div class="card w-100" style="width: 18rem">
+            <!-- /card table -->
+
+            <!-- card accordion -->
+            <div class="card">
               <div class="card-header fw-semibold fs-3">F.A.Q</div>
               <div class="accordion p-2" id="accordionExample">
                 <div
@@ -577,10 +605,14 @@
                 </div>
               </div>
             </div>
+            <!-- /card accordion -->
           </div>
+          <!-- /left col -->
 
-          <div class="col-12 col-xl-4">
-            <div class="card w-100 mb-4" style="width: 18rem">
+          <!-- right col -->
+          <div class="col-12 col-xl-4 pe-3 pt-4 ps-3 ps-xl-2 pb-4">
+            <!-- card checkbox -->
+            <div class="card mb-4">
               <div class="card-header fw-semibold fs-3">Todo</div>
               <ul class="list-group p-3">
                 <li class="list-group-item">
@@ -624,7 +656,10 @@
                 </li>
               </ul>
             </div>
-            <div class="card w-100" style="width: 18rem">
+            <!-- /card checkbox -->
+
+            <!-- card with img -->
+            <div class="card">
               <ul class="list-group p-3 fw-semibold">
                 <li class="list-group-item border-bottom-0">
                   <img src="img/stats.jpeg" alt="stats" class="img-fluid" />
@@ -641,7 +676,9 @@
                 </li>
               </ul>
             </div>
+            <!-- /card with img -->
           </div>
+          <!-- /right col -->
         </div>
         <!-- /second section -->
       </div>
